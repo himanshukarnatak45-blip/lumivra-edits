@@ -23,5 +23,5 @@ This website features:
 [Visit My Portfolio](https://himanshukarnatak45-blip.github.io/lumivra-edits/)
 
 ## 📫 Contact
-Email: lumivraedits@gmail.com  
+Email:  pahadilonda054@gmail.com
 Instagram: https://www.instagram.com/lumivra_edits?igsh=MXI0ZjJtbWihbnJkag==
