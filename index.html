@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lumivra Edits | Mayank Rawat</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+    body {
+      background: #0a0a0a;
+      color: #fff;
+      overflow-x: hidden;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 25px 80px;
+      position: fixed;
+      width: 100%;
+      background: rgba(0,0,0,0.6);
+      backdrop-filter: blur(10px);
+      z-index: 100;
+    }
+    header h1 {
+      color: #00fff2;
+      font-weight: 700;
+      letter-spacing: 1px;
+    }
+    nav a {
+      color: #fff;
+      margin-left: 30px;
+      text-decoration: none;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+    nav a:hover {
+      color: #00fff2;
+    }
+
+    /* Hero Section */
+    .hero {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      animation: fadeIn 1.5s ease;
+    }
+    .hero h2 {
+      font-size: 2.5rem;
+      color: #00fff2;
+      margin-bottom: 10px;
+    }
+    .hero h1 {
+      font-size: 4rem;
+      margin-bottom: 20px;
+    }
+    .hero p {
+      font-size: 1.2rem;
+      color: #ccc;
+      width: 60%;
+      margin: 0 auto 30px;
+    }
+    .hero button {
+      padding: 10px 25px;
+      background: #00fff2;
+      border: none;
+      border-radius: 30px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    .hero button:hover {
+      background: #fff;
+      color: #000;
+    }
+
+    @keyframes fadeIn {
+      from {opacity: 0; transform: translateY(30px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+
+    /* About */
+    .about {
+      padding: 100px 80px;
+      text-align: center;
+      background: #101010;
+    }
+    .about h2 {
+      font-size: 2.5rem;
+      color: #00fff2;
+      margin-bottom: 30px;
+    }
+    .about p {
+      color: #ccc;
+      max-width: 800px;
+      margin: 0 auto;
+      font-size: 1.1rem;
+    }
+
+    /* Skills */
+    .skills {
+      padding: 100px 80px;
+      text-align: center;
+    }
+    .skills h2 {
+      color: #00fff2;
+      margin-bottom: 50px;
+      font-size: 2.5rem;
+    }
+    .skill-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+    }
+    .skill-item {
+      background: #181818;
+      padding: 20px 40px;
+      border-radius: 20px;
+      box-shadow: 0 0 20px #00fff220;
+      transition: 0.3s;
+    }
+    .skill-item:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 0 25px #00fff260;
+    }
+
+    /* Portfolio */
+    .portfolio {
+      padding: 100px 80px;
+      background: #101010;
+      text-align: center;
+    }
+    .portfolio h2 {
+      color: #00fff2;
+      margin-bottom: 50px;
+      font-size: 2.5rem;
+    }
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+    }
+    .project {
+      background: #181818;
+      border-radius: 20px;
+      overflow: hidden;
+      transition: 0.3s;
+    }
+    .project:hover {
+      transform: scale(1.05);
+    }
+    .project img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+    .project h3 {
+      padding: 15px;
+      font-size: 1.3rem;
+    }
+
+    /* Contact */
+    .contact {
+      padding: 100px 80px;
+      text-align: center;
+    }
+    .contact h2 {
+      color: #00fff2;
+      margin-bottom: 30px;
+      font-size: 2.5rem;
+    }
+    .contact p {
+      color: #ccc;
+      font-size: 1.1rem;
+      margin-bottom: 20px;
+    }
+    .contact a {
+      color: #00fff2;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    footer {
+      background: #000;
+      text-align: center;
+      padding: 30px;
+      color: #888;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Lumivra Edits</h1>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="home">
+    <h2>Hi, I'm</h2>
+    <h1>Mayank Rawat</h1>
+    <p>I’m a passionate video editor, graphic designer, and thumbnail creator. I help brands and creators make their content stand out with eye-catching visuals and engaging edits.</p>
+    <button onclick="window.location.href='#contact'">Hire Me</button>
+  </section>
+
+  <section class="about" id="about">
+    <h2>About Me</h2>
+    <p>Hello! I’m <strong>Mayank Rawat</strong>, founder of <strong>Lumivra Edits</strong>.  
+    I specialize in creating professional video edits, stunning thumbnails, and modern designs that connect with your audience. I love turning creative ideas into reality.</p>
+  </section>
+
+  <section class="skills" id="skills">
+    <h2>My Skills</h2>
+    <div class="skill-list">
+      <div class="skill-item">Video Editing</div>
+      <div class="skill-item">Graphic Design</div>
+      <div class="skill-item">Thumbnail Design</div>
+      <div class="skill-item">Canva</div>
+      <div class="skill-item">Photoshop</div>
+      <div class="skill-item">Premiere Pro</div>
+    </div>
+  </section>
+
+  <section class="portfolio" id="portfolio">
+    <h2>My Work</h2>
+    <div class="projects">
+      <div class="project">
+        <img src="https://images.unsplash.com/photo-1611162616305-4c9b8c56e8a2?auto=format&fit=crop&w=800&q=60" alt="Video Project">
+        <h3>Video Edit Showcase</h3>
+      </div>
+      <div class="project">
+        <img src="https://images.unsplash.com/photo-1587825140708-dfaf72ae4b1b?auto=format&fit=crop&w=800&q=60" alt="Graphic Design">
+        <h3>Poster Design</h3>
+      </div>
+      <div class="project">
+        <img src="https://images.unsplash.com/photo-1593642532973-d31b6557fa68?auto=format&fit=crop&w=800&q=60" alt="Thumbnail">
+        <h3>Thumbnail Collection</h3>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2>Contact Me</h2>
+    <p>Let’s work together! Reach out to me at:</p>
+    <p><a href="mailto:lumivraedits@gmail.com">lumivraedits@gmail.com</a></p>
+  </section>
+
+  <footer>
+    © 2025 Lumivra Edits | Designed by Mayank Rawat
+  </footer>
+
+</body>
+</html>
